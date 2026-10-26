@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ============================================================================
  * Outprix Digital - Private SEO Management Dashboard Script
  * Pure Vanilla JavaScript (Zero External Frameworks / Zero Dependencies)
@@ -138,7 +138,7 @@
     },
     {
       id: 'task-5',
-      title: 'Verify Google Tag Manager (GTM-PN4JT277) tag firing consistency',
+      title: 'Verify Google Tag Manager (GTM-5BXND25G) tag firing consistency',
       category: 'Analytics',
       priority: 'Medium',
       pageUrl: 'All Pages',
@@ -310,7 +310,7 @@
     {
       id: 'act-2',
       action: 'Tag Validation',
-      details: 'Verified integration of GTM-PN4JT277, Clarity (ym59quwvm0), and Meta Pixel (1780748922961750).',
+      details: 'Verified integration of GTM-5BXND25G, Clarity (ym59quwvm0), and Meta Pixel (1780748922961750).',
       timestamp: new Date(Date.now() - 3600000 * 24 * 2).toISOString()
     },
     {

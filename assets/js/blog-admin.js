@@ -19,7 +19,7 @@
   const DEFAULT_SETTINGS = {
     adminPass: 'outprix2026',
     adminUser: 'admin',
-    siteUrl: 'https://outprixdigital.shop',
+    siteUrl: 'https://outprixrealestate.property',
     defaultLocation: 'Jaipur, Rajasthan',
     openAiKey: '',
     geminiKey: '',
@@ -1845,18 +1845,18 @@
         "@type": "Article",
         "headline": b.title,
         "description": b.metaDescription,
-        "image": b.featuredImage ? `https://outprixdigital.shop${b.featuredImage}` : "https://outprixdigital.shop/assets/outprix-logo.png",
+        "image": b.featuredImage ? `https://outprixrealestate.property${b.featuredImage}` : "https://outprixrealestate.property/assets/outprix-logo.png",
         "author": {
           "@type": "Organization",
           "name": author.name,
-          "url": "https://outprixdigital.shop"
+          "url": "https://outprixrealestate.property"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Outprix Digital",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://outprixdigital.shop/assets/outprix-logo.png"
+            "url": "https://outprixrealestate.property/assets/outprix-logo.png"
           }
         },
         "datePublished": b.publishDate || "2026-10-23",
@@ -1868,39 +1868,40 @@
 <head>
   <meta charset="UTF-8" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18400174407"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKRZ0ES0CR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    gtag('config', 'G-BKRZ0ES0CR');
     gtag('config', 'AW-18400174407');
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${this.escapeHtml(b.metaTitle || b.title)}</title>
   <meta name="description" content="${this.escapeHtml(b.metaDescription || '')}" />
-  <link rel="canonical" href="https://outprixdigital.shop/blog/${b.slug}" />
+  <link rel="canonical" href="https://outprixrealestate.property/blog/${b.slug}" />
   <link rel="icon" type="image/png" href="/assets/outprix-logo.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://outprixdigital.shop/blog/${b.slug}" />
+  <meta property="og:url" content="https://outprixrealestate.property/blog/${b.slug}" />
   <meta property="og:title" content="${this.escapeHtml(b.title)}" />
   <meta property="og:description" content="${this.escapeHtml(b.metaDescription || '')}" />
-  <meta property="og:image" content="https://outprixdigital.shop${b.featuredImage || '/assets/outprix-logo.png'}" />
+  <meta property="og:image" content="https://outprixrealestate.property${b.featuredImage || '/assets/outprix-logo.png'}" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${this.escapeHtml(b.title)}" />
   <meta name="twitter:description" content="${this.escapeHtml(b.metaDescription || '')}" />
-  <meta name="twitter:image" content="https://outprixdigital.shop${b.featuredImage || '/assets/outprix-logo.png'}" />
+  <meta name="twitter:image" content="https://outprixrealestate.property${b.featuredImage || '/assets/outprix-logo.png'}" />
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PN4JT277');</script>
+  })(window,document,'script','dataLayer','GTM-5BXND25G');</script>
   <!-- End Google Tag Manager -->
 
   <!-- Microsoft Clarity -->
@@ -2053,7 +2054,7 @@
 </head>
 <body class="bg-[#05070D] text-slate-100 antialiased">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN4JT277"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BXND25G"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 

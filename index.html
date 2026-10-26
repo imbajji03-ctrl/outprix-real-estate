@@ -1,14 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18400174407"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKRZ0ES0CR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
+    gtag('config', 'G-BKRZ0ES0CR');
     gtag('config', 'AW-18400174407');
   </script>
 
@@ -55,7 +56,7 @@
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PN4JT277');</script>
+  })(window,document,'script','dataLayer','GTM-5BXND25G');</script>
   <!-- End Google Tag Manager -->
   
   <!-- Microsoft Clarity -->
@@ -190,7 +191,7 @@
 </head>
 <body class="bg-[#05070D] text-slate-100 antialiased selection:bg-[#1E6BFB] selection:text-white">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN4JT277"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BXND25G"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
@@ -754,6 +755,24 @@
       const goal = document.getElementById('modal-goal').value;
       const budget = document.getElementById('modal-budget').value;
       
+      // GA4 & GTM Lead Conversion Tracking
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        lead_type: 'booking_modal',
+        lead_name: name,
+        lead_phone: phone,
+        lead_goal: goal,
+        lead_budget: budget
+      });
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'Lead',
+          event_label: goal,
+          value: budget
+        });
+      }
+      
       const text = encodeURIComponent(`Hi Bajrang, I want to book a strategy call for ${name} (${phone}). Goal: ${goal}, Budget: ${budget}`);
       window.open(`https://wa.me/919460382804?text=${text}`, '_blank');
       closeBookingModal();
@@ -852,5 +871,6 @@
 
   </script>
 
+  <script src="/assets/js/analytics-events.js"></script>
 </body>
 </html>
