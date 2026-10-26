@@ -1,4 +1,4 @@
-// app/robots.ts
+﻿// app/robots.ts
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://outprixdigital.com/sitemap.xml",
+    sitemap: "https://outprixrealestate.property/sitemap.xml",
   };
 }

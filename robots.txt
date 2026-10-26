@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Disallow: /admin/
 Disallow: /admin
 Disallow: /seo-dashboard.html
@@ -8,4 +8,4 @@ Allow: /blog
 Allow: /blog/
 Allow: /blog/post
 
-Sitemap: https://outprixdigital.shop/sitemap.xml
+Sitemap: https://outprixrealestate.property/sitemap.xml

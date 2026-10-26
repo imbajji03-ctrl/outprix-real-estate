@@ -1,10 +1,10 @@
-// app/sitemap.ts
+﻿// app/sitemap.ts
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
 import { services } from "@/lib/services-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://outprixdigital.com";
+  const baseUrl = "https://outprixrealestate.property";
 
   const staticPages = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 1 },

@@ -134,11 +134,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@outprixdigital.com"
+                  href="mailto:info@outprixrealestate.property"
                   className="flex items-start gap-3 text-slate-400 text-sm hover:text-blue-400 transition-colors"
                 >
                   <Mail className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
-                  info@outprixdigital.com
+                  info@outprixrealestate.property
                 </a>
               </li>
               <li>

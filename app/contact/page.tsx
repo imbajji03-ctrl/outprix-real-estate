@@ -1,4 +1,4 @@
-// app/contact/page.tsx
+﻿// app/contact/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -172,7 +172,7 @@ export default function ContactPage() {
                     </a>
 
                     <a
-                      href="mailto:info@outprixdigital.com"
+                      href="mailto:info@outprixrealestate.property"
                       className="flex items-start gap-4 group"
                     >
                       <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-slate-500 text-xs mb-0.5">Email Us</p>
                         <p className="text-white font-semibold group-hover:text-blue-400 transition-colors">
-                          info@outprixdigital.com
+                          info@outprixrealestate.property
                         </p>
                       </div>
                     </a>

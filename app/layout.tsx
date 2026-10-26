@@ -1,9 +1,9 @@
-// app/layout.tsx
+﻿// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://outprixdigital.com"),
+  metadataBase: new URL("https://outprixrealestate.property"),
   title: {
     default: "Outprix Digital | Jaipur's #1 Real Estate Digital Marketing Agency",
     template: "%s | Outprix Digital",
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     "outprix digital",
     "real estate seo jaipur",
   ],
-  authors: [{ name: "Bajrang Choudhary", url: "https://outprixdigital.com/about" }],
+  authors: [{ name: "Bajrang Choudhary", url: "https://outprixrealestate.property/about" }],
   creator: "Outprix Digital",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://outprixdigital.com",
+    url: "https://outprixrealestate.property",
     siteName: "Outprix Digital",
     title: "Outprix Digital | Jaipur's #1 Real Estate Digital Marketing Agency",
     description:
@@ -88,8 +88,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "MarketingAgency",
               name: "Outprix Digital",
-              url: "https://outprixdigital.com",
-              logo: "https://outprixdigital.com/logo.png",
+              url: "https://outprixrealestate.property",
+              logo: "https://outprixrealestate.property/logo.png",
               description:
                 "Jaipur's #1 Real Estate Digital Marketing Agency. We help real estate builders and developers generate qualified leads through Meta Ads, Google Ads, SEO, and Social Media.",
               founder: {
