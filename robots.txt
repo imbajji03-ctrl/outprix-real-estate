@@ -1,11 +1,48 @@
-﻿User-agent: *
+# Robots.txt for Outprix Real Estate
+# Domain: https://outprixrealestate.property/
+
+User-agent: *
+
+# Disallow Internal Admin & Dashboard Tools
 Disallow: /admin/
 Disallow: /admin
-Disallow: /seo-dashboard.html
 Disallow: /blog-admin.html
+Disallow: /seo-dashboard.html
+
+# Disallow Development, Source & Code Directories
+Disallow: /app/
+Disallow: /components/
+Disallow: /lib/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Disallow Raw Text & Data Dumps
+Disallow: /assets/*.txt$
+Disallow: /*.json$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /*.config.js$
+Disallow: /*.config.ts$
+
+# Explicitly Allow All Public Pages & Essential Visual Assets
 Allow: /
+Allow: /about
+Allow: /about/
+Allow: /services
+Allow: /services/
+Allow: /founder
+Allow: /founder/
+Allow: /contact
+Allow: /contact/
 Allow: /blog
 Allow: /blog/
-Allow: /blog/post
+Allow: /faq
+Allow: /faq/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/*.png$
+Allow: /assets/*.jpg$
+Allow: /public/
 
+# XML Sitemap Location
 Sitemap: https://outprixrealestate.property/sitemap.xml
