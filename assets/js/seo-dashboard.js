@@ -310,7 +310,7 @@
     {
       id: 'act-2',
       action: 'Tag Validation',
-      details: 'Verified integration of GTM-5BXND25G, Clarity (ym59quwvm0), and Meta Pixel (1780748922961750).',
+      details: 'Verified integration of GTM-5BXND25G, Clarity (z4x2fdzov6), and Meta Pixel (1780748922961750).',
       timestamp: new Date(Date.now() - 3600000 * 24 * 2).toISOString()
     },
     {
