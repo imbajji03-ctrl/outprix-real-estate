@@ -391,15 +391,39 @@
       e.preventDefault();
       const name = document.getElementById('form-name').value;
       const phone = document.getElementById('form-phone').value;
+      const email = document.getElementById('form-email') ? document.getElementById('form-email').value : '';
       const project = document.getElementById('form-project') ? document.getElementById('form-project').value : 'General Real Estate';
 
-      // Push to GTM dataLayer & GA4
+      // 1. Send Lead to Google Sheet via Apps Script Web App
+      const googleSheetWebhookUrl = 'https://script.google.com/macros/s/AKfycbzLtbk_x6wNOjdozuF-xkIgtM246-4C10lJlT2oYvXe-u3HkzXkEyfbTdMPIgVp8SgJpg/exec';
+      try {
+        fetch(googleSheetWebhookUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({
+            name: name,
+            phone: phone,
+            email: email,
+            project: project,
+            sourcePage: window.location.href,
+            submittedAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+          })
+        }).catch(function(err) {
+          console.error('Google Sheet logging error:', err);
+        });
+      } catch(err) {
+        console.error('Fetch error:', err);
+      }
+
+      // 2. Push to GTM dataLayer & GA4
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'generate_lead',
         lead_type: 'real_estate_consultation',
         lead_name: name,
         lead_phone: phone,
+        lead_email: email,
         lead_project: project
       });
 
@@ -411,21 +435,20 @@
         });
       }
 
-      // UI Feedback
+      // 3. UI Feedback
       const feedback = document.getElementById('form-feedback');
       feedback.classList.remove('hidden');
-      feedback.innerHTML = 
-        <div class="text-sm font-bold text-emerald-300 mb-1">âœ“ Thank you,  + name + ! Request Received.</div>
-        <div class="text-xs text-slate-300">
-          Founder Bajrang Choudhary has received your inquiry for <strong> + project + </strong> ( + phone + ). We will contact you within 24 hours to schedule your consultation.
-        </div>
-      ;
+      feedback.innerHTML = '<div class="text-sm font-bold text-emerald-300 mb-1">✓ Thank you, ' + name + '! Request Received.</div>' +
+        '<div class="text-xs text-slate-300">Founder Bajrang Choudhary has received your inquiry for <strong>' + project + '</strong> (' + phone + '). We will contact you within 24 hours to schedule your consultation.</div>';
 
-      // Reset form fields
+      // 4. Reset form fields
       document.getElementById('form-name').value = '';
       document.getElementById('form-phone').value = '';
+      if (document.getElementById('form-email')) {
+        document.getElementById('form-email').value = '';
+      }
 
-      // Open WhatsApp notification
+      // 5. Open WhatsApp notification
       const waText = encodeURIComponent('Hi Bajrang, I requested a Real Estate Marketing Audit on Outprix Real Estate for ' + project + '. Name: ' + name + ', Phone: ' + phone);
       setTimeout(function() {
         window.open('https://wa.me/919460382804?text=' + waText, '_blank');
