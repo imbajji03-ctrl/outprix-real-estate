@@ -50,7 +50,8 @@
     }
   </script>
   <!-- End Microsoft Clarity -->
-    <!-- Precompiled & Minified CSS for Sub-Second First Contentful Paint -->
+
+  <!-- Precompiled & Minified CSS for Sub-Second First Contentful Paint -->
   <link rel="stylesheet" href="/assets/css/styles.min.css">
 
   <!-- Non-blocking Google Fonts with Display Swap -->
@@ -61,7 +62,9 @@
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap">
   </noscript>
-    <!-- Comprehensive Google & Schema.org Rich Structured Data -->
+
+
+  <!-- Comprehensive Google & Schema.org Rich Structured Data -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,7 +133,7 @@
         "name": "Bajrang Choudhary",
         "jobTitle": "Founder & Real Estate Growth Strategist",
         "image": "https://outprixrealestate.property/assets/bajrang-choudhary.jpg",
-        "url": "https://outprixrealestate.property/#about",
+        "url": "https://outprixrealestate.property/about/",
         "telephone": "+919460382804"
       },
       "areaServed": [
@@ -186,30 +189,6 @@
           "position": 1,
           "name": "Home",
           "item": "https://outprixrealestate.property/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://outprixrealestate.property/#services"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Founder",
-          "item": "https://outprixrealestate.property/#about"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Blog",
-          "item": "https://outprixrealestate.property/#blog"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Contact",
-          "item": "https://outprixrealestate.property/#contact"
         }
       ]
     },
@@ -272,7 +251,7 @@
           "name": "What is the typical Cost Per Lead (CPL) for real estate Meta Ads in Jaipur?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In Jaipur, typical qualified CPLs for affordable housing range between ₹120 and ₹200. Mid-segment projects (₹50 Lakhs to ₹1.2 Crore) range from ₹200 to ₹400. Luxury projects (₹2 Crore+) range from ₹600 to ₹1200 with rigorous income and purchase intent filters."
+            "text": "In Jaipur, typical qualified CPLs for affordable housing range between â‚¹120 and â‚¹200. Mid-segment projects (â‚¹50 Lakhs to â‚¹1.2 Crore) range from â‚¹200 to â‚¹400. Luxury projects (â‚¹2 Crore+) range from â‚¹600 to â‚¹1200 with rigorous income and purchase intent filters."
           }
         },
         {
@@ -314,7 +293,7 @@
       </div>
       <div class="flex items-center gap-3">
         <a href="tel:+919460382804" class="hover:text-blue-400 transition flex items-center gap-1 font-medium">
-          📞 +91 9460382804
+          ðŸ“ž +91 9460382804
         </a>
         <a href="https://wa.me/919460382804?text=Hi%20Outprix%20Digital%2C%20I%20want%20to%20grow%20my%20real%20estate%20business." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-2.5 py-1 rounded font-semibold transition flex items-center gap-1">
           WhatsApp Direct
@@ -326,43 +305,40 @@
     <nav class="border-t border-slate-800/80 px-4 sm:px-6 py-3">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <!-- Logo -->
-        <div class="flex items-center cursor-pointer group py-1" onclick="navigateTo('home')">
+        <a href="/" class="flex items-center cursor-pointer group py-1">
           <img src="/assets/outprix-logo.png" alt="Outprix Real Estate" width="210" height="44" fetchpriority="high" decoding="async" class="w-[155px] sm:w-[170px] lg:w-[210px] h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
-        </div>
+        </a>
 
         <!-- Navigation Links -->
         <div class="hidden md:flex items-center gap-1 bg-[#0d1f36]/70 p-1.5 rounded-xl border border-blue-900/40">
-          <button onclick="navigateTo('home')" class="nav-btn px-4 py-1.5 rounded-lg text-sm font-semibold text-white bg-blue-600 transition" data-target="home">Home</button>
-          <button onclick="navigateTo('services')" class="nav-btn px-4 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition" data-target="services">Services</button>
-          <button onclick="navigateTo('about')" class="nav-btn px-4 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition" data-target="about">Founder</button>
-          <button onclick="navigateTo('blog')" class="nav-btn px-4 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition" data-target="blog">Blog</button>
-          <button onclick="navigateTo('contact')" class="nav-btn px-4 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition" data-target="contact">Contact</button>
+          <a href="/" class="nav-btn px-4 py-1.5 rounded-lg text-sm transition bg-blue-600 text-white font-semibold">Home</a>
+          <a href="/services/" class="nav-btn px-4 py-1.5 rounded-lg text-sm transition text-slate-300 hover:text-white font-medium">Services</a>
+          <a href="/about/" class="nav-btn px-4 py-1.5 rounded-lg text-sm transition text-slate-300 hover:text-white font-medium">Founder</a>
+          <a href="/blog/" class="nav-btn px-4 py-1.5 rounded-lg text-sm transition text-slate-300 hover:text-white font-medium">Blog</a>
+          <a href="/contact/" class="nav-btn px-4 py-1.5 rounded-lg text-sm transition text-slate-300 hover:text-white font-medium">Contact</a>
         </div>
 
         <!-- Action CTA -->
         <div class="flex items-center gap-2">
-          <button onclick="navigateTo('contact')" class="btn-gradient text-xs sm:text-sm font-bold text-white px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 flex items-center gap-1.5">
+          <a href="/contact/" class="btn-gradient text-xs sm:text-sm font-bold text-white px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 flex items-center gap-1.5">
             <span>Free Consultation</span>
-            <span>→</span>
-          </button>
+            <span>â†’</span>
+          </a>
         </div>
       </div>
       
       <!-- Mobile Sub-Menu -->
       <div class="flex md:hidden overflow-x-auto gap-2 pt-2.5 pb-1 text-xs">
-        <button onclick="navigateTo('home')" class="nav-btn px-3 py-1 rounded bg-blue-600 text-white font-semibold whitespace-nowrap" data-target="home">Home</button>
-        <button onclick="navigateTo('services')" class="nav-btn px-3 py-1 rounded bg-slate-800 text-slate-300 font-medium whitespace-nowrap" data-target="services">Services</button>
-        <button onclick="navigateTo('about')" class="nav-btn px-3 py-1 rounded bg-slate-800 text-slate-300 font-medium whitespace-nowrap" data-target="about">Founder</button>
-        <button onclick="navigateTo('blog')" class="nav-btn px-3 py-1 rounded bg-slate-800 text-slate-300 font-medium whitespace-nowrap" data-target="blog">Blog</button>
-        <button onclick="navigateTo('contact')" class="nav-btn px-3 py-1 rounded bg-slate-800 text-slate-300 font-medium whitespace-nowrap" data-target="contact">Book Consultation</button>
+        <a href="/" class="nav-btn px-3 py-1 rounded whitespace-nowrap bg-blue-600 text-white font-semibold">Home</a>
+        <a href="/services/" class="nav-btn px-3 py-1 rounded whitespace-nowrap bg-slate-800 text-slate-300 font-medium">Services</a>
+        <a href="/about/" class="nav-btn px-3 py-1 rounded whitespace-nowrap bg-slate-800 text-slate-300 font-medium">Founder</a>
+        <a href="/blog/" class="nav-btn px-3 py-1 rounded whitespace-nowrap bg-slate-800 text-slate-300 font-medium">Blog</a>
+        <a href="/contact/" class="nav-btn px-3 py-1 rounded whitespace-nowrap bg-slate-800 text-slate-300 font-medium">Book Consultation</a>
       </div>
     </nav>
   </header>
 
-  <!-- ============================================================== -->
-  <!-- PAGE: HOME -->
-  <!-- ============================================================== -->
-  <main id="tab-home" class="page-tab active">
+  <main id="home-content" class="page-tab active">
     
     <!-- HERO SECTION -->
     <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-[#091526] via-[#060e1a] to-[#060e1a]">
@@ -762,542 +738,20 @@
 
   </main>
 
-  <!-- ============================================================== -->
-  <!-- PAGE: SERVICES -->
-  <!-- ============================================================== -->
-  <main id="tab-services" class="page-tab">
-    <section class="py-16 bg-[#060e1a]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-3">
-          <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
-            Our Dedicated Offerings
-          </span>
-          <h1 class="text-4xl sm:text-5xl font-black text-white">Real Estate Digital Marketing Services</h1>
-          <p class="text-slate-400 text-sm sm:text-base">
-            Detailed breakdown of our 5 specialized pillars for property developers, builders, and real estate brands.
-          </p>
-        </div>
 
-        <div class="space-y-8">
-          
-          <!-- Meta Ads Deep Dive -->
-          <div class="card-glow rounded-3xl p-8 border border-blue-500/20">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-              <div class="lg:col-span-8 space-y-4">
-                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Service 01</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white">Meta & Instagram Ads for Real Estate</h2>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                  Facebook and Instagram are where India's prime property buyers spend their leisure time. We build scroll-stopping creative campaigns paired with high-converting native lead forms and landing pages.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-3 text-xs text-slate-300">
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Audience Filtering:</strong>
-                    Targeted by income bracket, luxury travel behavior, and property buying intent.
-                  </div>
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Creative Formats:</strong>
-                    Drone walkthroughs, floor plan carousels, and price transparency cards.
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-span-4 bg-[#081324] p-6 rounded-2xl border border-blue-900/40 text-center space-y-3">
-                <div class="text-3xl font-black text-white">₹150-₹300</div>
-                <div class="text-xs text-slate-400">Typical Mid-Segment Property CPL in Jaipur</div>
-                <button onclick="navigateTo('contact')" class="w-full btn-gradient py-2.5 rounded-xl text-white font-bold text-xs uppercase tracking-wide">
-                  Enquire for Meta Ads
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Google Ads Deep Dive -->
-          <div class="card-glow rounded-3xl p-8 border border-blue-500/20">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-              <div class="lg:col-span-8 space-y-4">
-                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Service 02</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white">Google Search & Performance Max Ads</h2>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                  When prospects search for homes in Jaipur, your project should occupy the top 3 spots. We run high-intent Search and Performance Max campaigns that capture urgent buyers ready to visit.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-3 text-xs text-slate-300">
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Intent Matching:</strong>
-                    Targeting terms like "Buy 3BHK Vaishali Nagar", "Plots Ajmer Road Jaipur".
-                  </div>
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Budget Protection:</strong>
-                    Strict negative keyword lists excluding job hunters, renters, and students.
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-span-4 bg-[#081324] p-6 rounded-2xl border border-blue-900/40 text-center space-y-3">
-                <div class="text-3xl font-black text-white">Top 3 Spots</div>
-                <div class="text-xs text-slate-400">Guaranteed Google Search Visibility</div>
-                <button onclick="navigateTo('contact')" class="w-full btn-gradient py-2.5 rounded-xl text-white font-bold text-xs uppercase tracking-wide">
-                  Enquire for Google Ads
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Real Estate SEO Deep Dive -->
-          <div class="card-glow rounded-3xl p-8 border border-blue-500/20">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-              <div class="lg:col-span-8 space-y-4">
-                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Service 03</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white">Real Estate SEO & Google Maps Dominance</h2>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                  Build an compounding organic organic lead channel. We optimize your website architecture, build locality hubs, and dominate Google Maps so buyers find your sales office organically.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-3 text-xs text-slate-300">
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Locality SEO:</strong>
-                    Dedicated ranking pages for every micro-market you develop in.
-                  </div>
-                  <div class="bg-[#091526] p-3 rounded-xl border border-slate-800">
-                    <strong class="text-white block mb-1">Google Business Optimization:</strong>
-                    Map pack rankings driving inbound calls and walk-ins.
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-span-4 bg-[#081324] p-6 rounded-2xl border border-blue-900/40 text-center space-y-3">
-                <div class="text-3xl font-black text-white">Zero Click Cost</div>
-                <div class="text-xs text-slate-400">Compounding Long-Term Lead Pipeline</div>
-                <button onclick="navigateTo('contact')" class="w-full btn-gradient py-2.5 rounded-xl text-white font-bold text-xs uppercase tracking-wide">
-                  Enquire for SEO
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Media & Performance Marketing -->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="card-glow rounded-3xl p-8 border border-blue-500/20 flex flex-col justify-between">
-              <div class="space-y-3">
-                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Service 04</span>
-                <h3 class="text-2xl font-black text-white">Social Media Management</h3>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                  Consistent construction reels, buyer testimonials, founder stories, and architectural showcases that turn browsers into believers.
-                </p>
-              </div>
-              <button onclick="navigateTo('contact')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition">
-                Start Social Branding →
-              </button>
-            </div>
-
-            <div class="card-glow rounded-3xl p-8 border border-blue-500/20 flex flex-col justify-between">
-              <div class="space-y-3">
-                <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Service 05</span>
-                <h3 class="text-2xl font-black text-white">Full-Funnel Performance Marketing</h3>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                  The complete turn-key package: multi-platform ad spend management, landing page design, CRM pipeline setup, and dedicated strategist support.
-                </p>
-              </div>
-              <button onclick="navigateTo('contact')" class="mt-6 w-full btn-gradient py-2.5 rounded-xl text-white font-bold text-xs transition">
-                Book Complete Engine →
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================================================== -->
-  <!-- PAGE: ABOUT & FOUNDER -->
-  <!-- ============================================================== -->
-  <main id="tab-about" class="page-tab">
-    <section class="py-16 bg-[#060e1a]">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
-        
-        <!-- Header -->
-        <div class="text-center max-w-3xl mx-auto space-y-3">
-          <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
-            About Outprix Digital
-          </span>
-          <h1 class="text-4xl sm:text-5xl font-black text-white">Built Exclusively For Real Estate</h1>
-          <p class="text-slate-400 text-sm sm:text-base">
-            Why we chose to reject all other industries and dedicate 100% of our focus to property marketing.
-          </p>
-        </div>
-
-        <!-- Founder Story Block -->
-        <div class="card-glow rounded-3xl p-8 sm:p-12 border border-blue-500/20">
-          <div class="grid lg:grid-cols-12 gap-10 items-center">
-            
-            <div class="lg:col-span-5 text-center">
-              <div class="inline-block relative rounded-2xl overflow-hidden border-2 border-blue-500/30 shadow-2xl bg-[#091526] p-2">
-                <img src="/assets/bajrang-choudhary.jpg" alt="Bajrang Choudhary" width="256" height="320" loading="lazy" decoding="async" class="w-64 h-auto rounded-xl object-cover mx-auto" onerror="this.src='https://placehold.co/400x500/0d1929/ffffff?text=Bajrang+Choudhary'">
-                <div class="mt-3">
-                  <div class="font-heading font-black text-white text-lg">Bajrang Choudhary</div>
-                  <div class="text-blue-400 text-xs font-semibold">Founder & Growth Strategist</div>
-                  <div class="text-slate-400 text-[11px]">Jaipur, Rajasthan</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-7 space-y-5">
-              <h2 class="text-2xl sm:text-3xl font-black text-white">The Outprix Digital Story</h2>
-              
-              <div class="space-y-4 text-slate-300 text-sm leading-relaxed">
-                <p>
-                  Outprix Digital was born out of a stark realization: real estate developers were being served by generalist marketing agencies that applied the same playbook to a ₹2 Crore luxury flat as they did to an e-commerce t-shirt.
-                </p>
-                <p>
-                  Real estate has long sales cycles, large capital investments, stringent RERA guidelines, and complex emotional triggers. You cannot generate property buyers with shallow, generic ads.
-                </p>
-                <p>
-                  As founder, I made a decisive vow: <strong>Outprix Digital will exclusively serve real estate</strong>. We study Jaipur’s micro-markets — from Mansarovar to Ajmer Road, Jagatpura to Vaishali Nagar — and understand how local and NRI investors evaluate builders.
-                </p>
-                <div class="p-4 rounded-xl bg-blue-950/40 border border-blue-500/30 text-white font-medium text-xs">
-                  "Our mission is simple: To be Rajasthan's most dependable, results-driven real estate marketing partner — zero fake testimonials, zero excuses, just genuine growth."
-                </div>
-              </div>
-
-              <div class="flex items-center gap-4 pt-2">
-                <a href="tel:+919460382804" class="btn-gradient text-white px-5 py-2.5 rounded-xl text-xs font-bold">
-                  Call Bajrang: +91 9460382804
-                </a>
-                <button onclick="navigateTo('contact')" class="px-5 py-2.5 rounded-xl border border-slate-700 hover:border-blue-400 text-slate-300 text-xs font-semibold transition">
-                  Book A Consultation
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Agency Values -->
-        <div class="grid sm:grid-cols-3 gap-6">
-          <div class="card-glow rounded-2xl p-6 text-center space-y-3">
-            <div class="text-3xl">🤝</div>
-            <h3 class="text-lg font-bold text-white">Honesty & Authenticity</h3>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              We never fabricate fake reviews or inflate numbers. If an ad isn't performing, we fix it openly with full transparency.
-            </p>
-          </div>
-          <div class="card-glow rounded-2xl p-6 text-center space-y-3">
-            <div class="text-3xl">🎯</div>
-            <h3 class="text-lg font-bold text-white">Strict Real Estate Specialization</h3>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Every playbook, copywriter, and media buyer on our team focuses 100% on property demographics and investor intent.
-            </p>
-          </div>
-          <div class="card-glow rounded-2xl p-6 text-center space-y-3">
-            <div class="text-3xl">📈</div>
-            <h3 class="text-lg font-bold text-white">Site Visits Over Clicks</h3>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Impressions and clicks don't pay your construction loans. We measure our success on qualified leads who visit your site.
-            </p>
-          </div>
-        </div>
-
-        <!-- Honest Testimonials Notice -->
-        <div class="p-6 rounded-2xl bg-[#091526] border border-slate-800 text-center max-w-2xl mx-auto space-y-2">
-          <div class="text-blue-400 font-bold text-xs uppercase tracking-wider">Our Transparency Policy</div>
-          <div class="text-white font-bold text-sm">Authentic Client Testimonials Policy</div>
-          <p class="text-slate-400 text-xs leading-relaxed">
-            Unlike other agencies that put fabricated client reviews, Outprix Digital only publishes verified video testimonials and case studies from real clients upon signed approval. We let our campaign metrics speak for themselves.
-          </p>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================================================== -->
-  <!-- PAGE: BLOG (SEO ARTICLES) -->
-  <!-- ============================================================== -->
-  <main id="tab-blog" class="page-tab">
-    <section class="py-16 bg-[#060e1a]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-3">
-          <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
-            Articles & Insights
-          </span>
-          <h1 class="text-4xl sm:text-5xl font-black text-white">Real Estate Marketing Blog</h1>
-          <p class="text-slate-400 text-sm sm:text-base">
-            In-depth guides, cost breakdowns, and technical playbooks designed for builders and property marketers.
-          </p>
-        </div>
-
-        <!-- Article Reader Modal Container (Hidden by default) -->
-        <div id="blog-reader-view" class="hidden card-glow rounded-3xl p-6 sm:p-10 border border-blue-500/30 bg-[#071322]">
-          <button onclick="closeBlogReader()" class="mb-4 text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1">
-            ← Back to All Articles
-          </button>
-          <div id="blog-reader-content"></div>
-          <div class="mt-8 pt-6 border-t border-slate-800 flex justify-between items-center">
-            <button onclick="closeBlogReader()" class="text-xs text-slate-400 hover:text-white">
-              ← Close Article
-            </button>
-            <button onclick="navigateTo('contact')" class="btn-gradient text-white text-xs font-bold px-4 py-2 rounded-lg">
-              Discuss This Strategy With Bajrang →
-            </button>
-          </div>
-        </div>
-
-        <!-- Blog Cards Grid -->
-        <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          <!-- Post 1 -->
-          <div class="card-glow rounded-2xl p-6 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] text-blue-400 font-semibold">
-                <span>META ADS</span>
-                <span class="text-slate-500">8 min read</span>
-              </div>
-              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition cursor-pointer" onclick="openBlog(1)">
-                How Real Estate Developers Can Get 10x More Leads with Meta Ads in 2026
-              </h3>
-              <p class="text-slate-400 text-xs leading-relaxed">
-                Discover the exact Meta Ads strategy that top builders in Jaipur use to generate hundreds of verified property inquiries every month without wasting budget.
-              </p>
-            </div>
-            <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400">By Bajrang Choudhary</span>
-              <button onclick="openBlog(1)" class="text-xs font-bold text-blue-400 hover:text-blue-300">
-                Read Guide →
-              </button>
-            </div>
-          </div>
-
-          <!-- Post 2 -->
-          <div class="card-glow rounded-2xl p-6 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] text-blue-400 font-semibold">
-                <span>GOOGLE ADS</span>
-                <span class="text-slate-500">10 min read</span>
-              </div>
-              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition cursor-pointer" onclick="openBlog(2)">
-                Google Ads for Real Estate: The Complete Guide for Builders in Jaipur
-              </h3>
-              <p class="text-slate-400 text-xs leading-relaxed">
-                Capture high-intent home buyers actively searching for property. Keyword selection, negative matches, and landing page conversion secrets.
-              </p>
-            </div>
-            <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400">By Bajrang Choudhary</span>
-              <button onclick="openBlog(2)" class="text-xs font-bold text-blue-400 hover:text-blue-300">
-                Read Guide →
-              </button>
-            </div>
-          </div>
-
-          <!-- Post 3 -->
-          <div class="card-glow rounded-2xl p-6 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] text-blue-400 font-semibold">
-                <span>REAL ESTATE SEO</span>
-                <span class="text-slate-500">9 min read</span>
-              </div>
-              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition cursor-pointer" onclick="openBlog(3)">
-                Why Every Real Estate Brand Needs SEO in 2026 (And How to Get Started)
-              </h3>
-              <p class="text-slate-400 text-xs leading-relaxed">
-                Paid ads stop the moment you stop paying. SEO builds a compounding organic pipeline that delivers buyers 24/7 without cost per click.
-              </p>
-            </div>
-            <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400">By Bajrang Choudhary</span>
-              <button onclick="openBlog(3)" class="text-xs font-bold text-blue-400 hover:text-blue-300">
-                Read Guide →
-              </button>
-            </div>
-          </div>
-
-          <!-- Post 4 -->
-          <div class="card-glow rounded-2xl p-6 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] text-blue-400 font-semibold">
-                <span>SOCIAL MEDIA</span>
-                <span class="text-slate-500">7 min read</span>
-              </div>
-              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition cursor-pointer" onclick="openBlog(4)">
-                Social Media Marketing for Real Estate: What Actually Works in India
-              </h3>
-              <p class="text-slate-400 text-xs leading-relaxed">
-                From Instagram property walkthrough reels to founder authority on LinkedIn, discover real content formats that establish trust for big-ticket sales.
-              </p>
-            </div>
-            <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400">By Bajrang Choudhary</span>
-              <button onclick="openBlog(4)" class="text-xs font-bold text-blue-400 hover:text-blue-300">
-                Read Guide →
-              </button>
-            </div>
-          </div>
-
-          <!-- Post 5 -->
-          <div class="card-glow rounded-2xl p-6 flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] text-blue-400 font-semibold">
-                <span>PERFORMANCE DATA</span>
-                <span class="text-slate-500">6 min read</span>
-              </div>
-              <h3 class="text-lg font-bold text-white hover:text-blue-400 transition cursor-pointer" onclick="openBlog(5)">
-                Performance Marketing for Real Estate: Cost Per Lead Breakdown India
-              </h3>
-              <p class="text-slate-400 text-xs leading-relaxed">
-                Realistic benchmarks for affordable homes, mid-segment flats, and luxury villas across Jaipur, Delhi NCR, and Tier-1 cities.
-              </p>
-            </div>
-            <div class="pt-5 mt-4 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400">By Bajrang Choudhary</span>
-              <button onclick="openBlog(5)" class="text-xs font-bold text-blue-400 hover:text-blue-300">
-                Read Guide →
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================================================== -->
-  <!-- PAGE: CONTACT & CONSULTATION FORM -->
-  <!-- ============================================================== -->
-  <main id="tab-contact" class="page-tab">
-    <section class="py-16 bg-[#060e1a]">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-        
-        <div class="text-center max-w-3xl mx-auto space-y-3">
-          <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
-            Direct Connect
-          </span>
-          <h1 class="text-4xl sm:text-5xl font-black text-white">Book Your Free Real Estate Strategy Call</h1>
-          <p class="text-slate-400 text-sm sm:text-base">
-            No junior reps. You will speak directly with founder Bajrang Choudhary regarding your real estate project and goals.
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-12 gap-8 items-start">
-          
-          <!-- Contact Form -->
-          <div class="lg:col-span-7 card-glow rounded-3xl p-6 sm:p-10 border border-blue-500/20">
-            <h2 class="text-2xl font-bold text-white mb-2">Request A Project Marketing Proposal</h2>
-            <p class="text-slate-400 text-xs mb-6">Complete the details below to receive a custom lead generation roadmap.</p>
-            
-            <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-medium text-slate-300 mb-1">Your Full Name *</label>
-                  <input type="text" id="form-name" required placeholder="e.g. Ramesh Sharma" class="w-full bg-[#081322] border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-slate-500 outline-none transition">
-                </div>
-                <div>
-                  <label class="block text-xs font-medium text-slate-300 mb-1">Phone Number (Calling / WhatsApp) *</label>
-                  <input type="tel" id="form-phone" required placeholder="e.g. 98290XXXXX" class="w-full bg-[#081322] border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-slate-500 outline-none transition">
-                </div>
-              </div>
-
-              <div class="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
-                  <input type="email" id="form-email" placeholder="name@yourcompany.com" class="w-full bg-[#081322] border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-slate-500 outline-none transition">
-                </div>
-                <div>
-                  <label class="block text-xs font-medium text-slate-300 mb-1">Property / Project Category *</label>
-                  <select id="form-project" required class="w-full bg-[#081322] border border-slate-700 focus:border-blue-500 rounded-xl px-3.5 py-2.5 text-sm text-white outline-none transition">
-                    <option value="Residential Apartments">Residential Apartments (1/2/3/4 BHK)</option>
-                    <option value="Plots & Townships">Plots / Land / Township</option>
-                    <option value="Luxury Villas">Luxury Villas / Farmhouses</option>
-                    <option value="Commercial Spaces">Commercial Retail / Offices / SCOs</option>
-                    <option value="Real Estate Brokerage">Real Estate Channel Partner / Brokerage</option>
-                  </select>
-                </div>
-              </div>
-
-              <button type="submit" class="w-full btn-gradient text-white font-extrabold py-3.5 rounded-xl shadow-xl shadow-blue-600/30 text-sm tracking-wide transition flex items-center justify-center gap-2">
-                <span>Submit & Schedule Call With Bajrang</span>
-                <span>→</span>
-              </button>
-
-              <div id="form-feedback" class="hidden p-4 rounded-xl text-xs font-medium bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-center"></div>
-              
-              <p class="text-[11px] text-slate-400 text-center pt-1">
-                🔒 Privacy Assured: We never spam or distribute builder project data.
-              </p>
-            </form>
-          </div>
-
-          <!-- Direct Information Card -->
-          <div class="lg:col-span-5 space-y-6">
-            <div class="card-glow rounded-3xl p-6 sm:p-8 border border-blue-500/20 space-y-6">
-              <div>
-                <h3 class="text-xl font-bold text-white mb-1">Direct Contact Desk</h3>
-                <p class="text-slate-400 text-xs">Reach out for quick consultations or immediate inquiries.</p>
-              </div>
-
-              <div class="space-y-4 text-xs sm:text-sm">
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0">📞</div>
-                  <div>
-                    <div class="text-slate-400 text-xs">Direct Phone</div>
-                    <a href="tel:+919460382804" class="text-white font-bold hover:text-blue-400 transition">+91 9460382804</a>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0">💬</div>
-                  <div>
-                    <div class="text-slate-400 text-xs">WhatsApp Support</div>
-                    <a href="https://wa.me/919460382804?text=Hi%20Bajrang%2C%20I%20am%20contacting%20you%20from%20Outprix%20Digital%20website." target="_blank" class="text-emerald-400 font-bold hover:underline">
-                      Chat with Founder Directly
-                    </a>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0">📍</div>
-                  <div>
-                    <div class="text-slate-400 text-xs">Headquarters</div>
-                    <div class="text-white font-semibold">Jaipur, Rajasthan, India</div>
-                    <div class="text-slate-400 text-xs">Serving Builders Pan-India</div>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-3">
-                  <div class="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0">⏰</div>
-                  <div>
-                    <div class="text-slate-400 text-xs">Working Hours</div>
-                    <div class="text-white font-semibold">Monday — Saturday: 9:00 AM — 7:30 PM</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Quick Quote Box -->
-              <div class="p-4 rounded-xl bg-[#091526] border border-slate-800 text-xs text-slate-300 italic">
-                "We don't juggle 20 different retail clients. We take on select real estate developers so we can devote deep strategic focus to selling out their units."
-                <div class="mt-2 text-right font-bold text-white not-italic">— Bajrang Choudhary</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================================================== -->
   <!-- GLOBAL FOOTER -->
-  <!-- ============================================================== -->
   <footer class="bg-[#060E1A] border-t border-slate-800/80 pt-16 pb-12 text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-4 gap-8 mb-12">
         
-          <div class="inline-block cursor-pointer group mb-1" onclick="navigateTo('home')">
+        <div>
+          <a href="/" class="inline-block cursor-pointer group mb-1">
             <img src="/assets/outprix-logo.png" alt="Outprix Real Estate" width="210" height="44" fetchpriority="high" decoding="async" class="w-[155px] sm:w-[170px] lg:w-[210px] h-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
-          </div>
-          <p class="leading-relaxed">
+          </a>
+          <p class="leading-relaxed mt-2">
             Jaipur's #1 Real Estate Digital Marketing Agency. Powered by data, laser-targeted ad architecture, and transparent communication.
           </p>
-          <div class="text-white font-semibold">
+          <div class="text-white font-semibold mt-3">
             Founder: Bajrang Choudhary
           </div>
         </div>
@@ -1305,22 +759,22 @@
         <div>
           <h4 class="font-bold text-white text-sm mb-3">Our Core Services</h4>
           <ul class="space-y-2">
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Meta Ads for Properties</button></li>
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Google Ads & High-Intent Search</button></li>
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Real Estate SEO & Local Map Pack</button></li>
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Social Media Showrooms & Reels</button></li>
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Full-Funnel Performance Engine</button></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Meta Ads for Properties</a></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Google Ads & High-Intent Search</a></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Real Estate SEO & Local Map Pack</a></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Social Media Showrooms & Reels</a></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Full-Funnel Performance Engine</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-bold text-white text-sm mb-3">Navigation</h4>
           <ul class="space-y-2">
-            <li><button onclick="navigateTo('home')" class="hover:text-blue-400 transition">Home</button></li>
-            <li><button onclick="navigateTo('about')" class="hover:text-blue-400 transition">Founder</button></li>
-            <li><button onclick="navigateTo('services')" class="hover:text-blue-400 transition">Detailed Services</button></li>
-            <li><button onclick="navigateTo('blog')" class="hover:text-blue-400 transition">Real Estate Blog</button></li>
-            <li><button onclick="navigateTo('contact')" class="hover:text-blue-400 transition">Book Consultation</button></li>
+            <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="/about/" class="hover:text-blue-400 transition">Founder</a></li>
+            <li><a href="/services/" class="hover:text-blue-400 transition">Detailed Services</a></li>
+            <li><a href="/blog/" class="hover:text-blue-400 transition">Real Estate Blog</a></li>
+            <li><a href="/contact/" class="hover:text-blue-400 transition">Book Consultation</a></li>
           </ul>
         </div>
 
@@ -1331,9 +785,9 @@
             <p>Direct: <a href="tel:+919460382804" class="text-white hover:text-blue-400">+91 9460382804</a></p>
             <p>WhatsApp: Available 24/7</p>
             <div class="pt-2">
-              <button onclick="navigateTo('contact')" class="btn-gradient text-white px-4 py-2 rounded-lg font-bold text-xs">
-                Request Free Audit →
-              </button>
+              <a href="/contact/" class="btn-gradient text-white px-4 py-2 rounded-lg font-bold text-xs inline-block">
+                Request Free Audit â†’
+              </a>
             </div>
           </div>
         </div>
@@ -1342,13 +796,13 @@
 
       <div class="border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
         <div>
-          © 2026 Outprix Digital. All rights reserved. Exclusively dedicated to Real Estate Marketing.
+          Â© 2026 Outprix Digital. All rights reserved. Exclusively dedicated to Real Estate Marketing.
         </div>
         <div class="flex items-center gap-4">
           <span class="hover:text-slate-400 cursor-pointer">Privacy Policy</span>
-          <span>•</span>
+          <span>â€¢</span>
           <span class="hover:text-slate-400 cursor-pointer">Terms of Service</span>
-          <span>•</span>
+          <span>â€¢</span>
           <span class="text-blue-400 font-medium">Jaipur, India</span>
         </div>
       </div>
@@ -1362,206 +816,25 @@
     </svg>
   </a>
 
-  <!-- SCRIPT FOR CLIENT INTERACTIVITY -->
   <script>
     function navigateTo(target) {
-      // Hide all tabs
-      document.querySelectorAll('.page-tab').forEach(el => el.classList.remove('active'));
-      
-      // Show selected tab
-      const selected = document.getElementById('tab-' + target);
-      if (selected) {
-        selected.classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (!target || target === 'home') {
+        window.location.href = '/';
+      } else {
+        window.location.href = '/' + target + '/';
       }
-
-      // Update navbar buttons styling
-      document.querySelectorAll('.nav-btn').forEach(btn => {
-        if (btn.getAttribute('data-target') === target) {
-          btn.classList.add('bg-blue-600', 'text-white', 'font-semibold');
-          btn.classList.remove('text-slate-300', 'bg-slate-800');
-        } else {
-          btn.classList.remove('bg-blue-600', 'text-white');
-          btn.classList.add('text-slate-300');
-        }
-      });
     }
+  </script>
 
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById('form-name').value;
-      const phone = document.getElementById('form-phone').value;
-      const project = document.getElementById('form-project').value;
-      
-
-      const feedback = document.getElementById('form-feedback');
-      feedback.classList.remove('hidden');
-      feedback.innerHTML = `
-        <div class="text-sm font-bold text-emerald-300 mb-1">✓ Thank you, ${name}! Request Received.</div>
-        <div class="text-xs text-slate-300">
-          Founder Bajrang Choudhary has received your inquiry for <strong>${project}</strong> (${phone}). We will contact you within 24 hours to schedule your consultation.
-        </div>
-      `;
-
-      // Clear fields
-      document.getElementById('form-name').value = '';
-      document.getElementById('form-phone').value = '';
-      
-    }
-
-    // Blog reader data
-    const blogData = {
-      1: {
-        title: "How Real Estate Developers Can Get 10x More Leads with Meta Ads in 2026",
-        category: "META & INSTAGRAM ADS",
-        author: "Bajrang Choudhary — Founder & Growth Strategist",
-        body: `
-          <h2 class="text-2xl font-black text-white mb-3">Why Meta Ads Are a Game-Changer for Real Estate</h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            In 2026, over 500 million Indians are active across Facebook and Instagram. The core demographic purchasing homes, plots, and commercial units in tier-1 and tier-2 markets like Jaipur falls between 28 and 50 years of age — the exact audience spending 2+ hours daily on Meta platforms.
-          </p>
-          <h3 class="text-lg font-bold text-blue-400 mb-2">The Common Pitfalls to Avoid:</h3>
-          <ul class="list-disc pl-5 text-sm text-slate-300 space-y-2 mb-4">
-            <li><strong>Broad, Untargeted Audiences:</strong> Showing luxury ₹1.5 Cr+ villas to students and entry-level earners.</li>
-            <li><strong>Static, Dull Creatives:</strong> Using generic 3D renders without price clarity or location USPs.</li>
-            <li><strong>Absence of Fast Follow-ups:</strong> Property leads lose 70% of conversion potential if not contacted within 15 minutes.</li>
-          </ul>
-          <h3 class="text-lg font-bold text-blue-400 mb-2">The Outprix 3-Layer Ad Funnel:</h3>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            We deploy a multi-stage funnel: 1) Video walkthroughs to build awareness, 2) Interactive lead forms with qualifying questions (budget & intent), and 3) Dynamic retargeting ads highlighting limited-time discounts or bank loan approvals.
-          </p>
-        `
-      },
-      2: {
-        title: "Google Ads for Real Estate: The Complete Guide for Builders in Jaipur",
-        category: "HIGH-INTENT GOOGLE ADS",
-        author: "Bajrang Choudhary — Founder & Growth Strategist",
-        body: `
-          <h2 class="text-2xl font-black text-white mb-3">Capturing Home Buyers at the Point of High Purchase Intent</h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            While Meta ads generate demand, Google Ads captures buyers who have already decided to purchase. When a user searches for <em>"3BHK flat in Jagatpura Jaipur"</em> or <em>"commercial shops in Vaishali Nagar"</em>, they have immediate intent.
-          </p>
-          <h3 class="text-lg font-bold text-blue-400 mb-2">Crucial Pillars of Real Estate PPC:</h3>
-          <ul class="list-disc pl-5 text-sm text-slate-300 space-y-2 mb-4">
-            <li><strong>Aggressive Negative Keyword Management:</strong> Exclude terms like "rent", "PG", "furniture", "internship", and "free".</li>
-            <li><strong>Dedicated Micro-Landing Pages:</strong> Never send Google Ads traffic to your homepage. Direct them to a high-speed page showcasing only the searched unit type.</li>
-            <li><strong>Call Extensions:</strong> Over 60% of property inquiries on Google Ads originate as direct phone calls on mobile.</li>
-          </ul>
-        `
-      },
-      3: {
-        title: "Why Every Real Estate Brand Needs SEO in 2026 (And How to Get Started)",
-        category: "ORGANIC SEO & MAP PACK",
-        author: "Bajrang Choudhary — Founder & Growth Strategist",
-        body: `
-          <h2 class="text-2xl font-black text-white mb-3">Building a Compounding, Free Inbound Lead Engine</h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            Paid ads end the minute your budget depletes. Real estate search engine optimization gives you permanent digital real estate on Google Search and Google Maps.
-          </p>
-          <h3 class="text-lg font-bold text-blue-400 mb-2">What Real Estate SEO Focuses On:</h3>
-          <ul class="list-disc pl-5 text-sm text-slate-300 space-y-2 mb-4">
-            <li><strong>Google Business Profile (Local 3-Pack):</strong> Optimizing your sales gallery location on Google Maps for local queries.</li>
-            <li><strong>Locality Cluster Pages:</strong> Creating authoritative guides comparing property appreciation rates in key Jaipur hubs.</li>
-            <li><strong>RERA & Trust Content:</strong> Answering critical buyer questions regarding approvals, possession timelines, and bank affiliations.</li>
-          </ul>
-        `
-      },
-      4: {
-        title: "Social Media Marketing for Real Estate: What Actually Works in India",
-        category: "SOCIAL MEDIA BRANDING",
-        author: "Bajrang Choudhary — Founder & Growth Strategist",
-        body: `
-          <h2 class="text-2xl font-black text-white mb-3">From Casual Scrollers to Confirmed Site Visits</h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            Modern homebuyers check an agency's or builder's Instagram before booking a site visit. Your social media page is your digital brochure and trust proof.
-          </p>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            High-production drone footage, live construction milestone updates, and transparent founder Q&As outperform glossy stock photos every time.
-          </p>
-        `
-      },
-      5: {
-        title: "Performance Marketing for Real Estate: Cost Per Lead Breakdown India",
-        category: "BENCHMARKS & DATA",
-        author: "Bajrang Choudhary — Founder & Growth Strategist",
-        body: `
-          <h2 class="text-2xl font-black text-white mb-3">Understanding CPL Benchmarks Across Real Estate Segments</h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            In Jaipur and tier-2 markets, target CPLs for affordable units (under ₹45 Lakhs) hover around ₹120-₹200. For mid-segment (₹50 Lakhs to ₹1.2 Crore), expect ₹200-₹400. Luxury villas (₹2 Crore+) require specialized qualification filtering with CPLs around ₹600-₹1200.
-          </p>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            At Outprix Digital, we track cost per qualified site visit rather than raw inquiries to give builders genuine financial visibility.
-          </p>
-        `
-      }
-    };
-
-    function openBlog(id) {
-      const data = blogData[id];
-      if (!data) return;
-      
-      const container = document.getElementById('blog-reader-content');
-      container.innerHTML = `
-        <span class="px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3 inline-block">
-          ${data.category}
-        </span>
-        <h1 class="text-2xl sm:text-3xl font-black text-white mb-2 leading-tight">${data.title}</h1>
-        <div class="text-xs text-slate-400 mb-6 pb-4 border-b border-slate-800">Author: <strong class="text-white">${data.author}</strong> • Outprix Digital Editorial</div>
-        <div class="prose text-slate-300">${data.body}</div>
-      `;
-
-      document.getElementById('blog-grid').classList.add('hidden');
-      document.getElementById('blog-reader-view').classList.remove('hidden');
-      document.getElementById('blog-reader-view').scrollIntoView({ behavior: 'smooth' });
-    }
-
-        // URL Hash Routing Support (#home, #services, #about, #founder, #blog, #contact)
-    window.addEventListener('DOMContentLoaded', function() {
+  <!-- Legacy Anchor Redirection Script -->
+  <script>
+    (function() {
       var hash = window.location.hash.replace('#', '').toLowerCase();
-      if (hash === 'founder') hash = 'about';
-      if (['home', 'services', 'about', 'blog', 'contact'].indexOf(hash) !== -1) {
-        navigateTo(hash);
-      }
-    });
-
-    // Enhanced handleFormSubmit with GA4 & GTM Event Tracking
-    var originalHandleFormSubmit = handleFormSubmit;
-    handleFormSubmit = function(e) {
-      e.preventDefault();
-      var name = document.getElementById('form-name').value;
-      var phone = document.getElementById('form-phone').value;
-      var project = document.getElementById('form-project') ? document.getElementById('form-project').value : 'General Real Estate';
-
-      // Push to GTM dataLayer & GA4
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'generate_lead',
-        lead_type: 'real_estate_consultation',
-        lead_name: name,
-        lead_phone: phone,
-        lead_project: project
-      });
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', {
-          event_category: 'Lead',
-          event_label: project,
-          value: 1
-        });
-      }
-
-      // Call original UI feedback
-      originalHandleFormSubmit(e);
-
-      // Open WhatsApp notification
-      var waText = encodeURIComponent('Hi Bajrang, I requested a Real Estate Marketing Audit on Outprix Real Estate for ' + project + '. Name: ' + name + ', Phone: ' + phone);
-      setTimeout(function() {
-        window.open('https://wa.me/919460382804?text=' + waText, '_blank');
-      }, 500);
-    };
-    function closeBlogReader() {
-      document.getElementById('blog-reader-view').classList.add('hidden');
-      document.getElementById('blog-grid').classList.remove('hidden');
-    }
+      if (hash === 'services') window.location.replace('/services/');
+      else if (hash === 'about' || hash === 'founder') window.location.replace('/about/');
+      else if (hash === 'blog') window.location.replace('/blog/');
+      else if (hash === 'contact') window.location.replace('/contact/');
+    })();
   </script>
 
   <script src="/assets/js/analytics-events.js"></script>
