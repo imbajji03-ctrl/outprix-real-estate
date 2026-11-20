@@ -27,8 +27,10 @@ Disallow: /*.config.ts$
 # Explicitly Allow All Public Pages & Essential Visual Assets
 Allow: /
 Allow: /favicon.ico
-Allow: /favicon.png
+Allow: /favicon*.png
 Allow: /apple-touch-icon.png
+Allow: /site.webmanifest
+Allow: /assets/favicon*
 Allow: /about
 Allow: /about/
 Allow: /services
