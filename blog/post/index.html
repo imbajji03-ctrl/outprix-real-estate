@@ -1,6 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
 <head>
+  <script>
+    (function() {
+      var p = new URLSearchParams(window.location.search);
+      var s = p.get('slug');
+      if (s) {
+        window.location.replace('/blog/' + encodeURIComponent(s) + '/');
+      }
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -374,11 +383,11 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
         <a href="/" class="transition-colors text-slate-300 hover:text-white py-1">Home</a>
-        <a href="/services" class="transition-colors text-slate-300 hover:text-white py-1">Services</a>
-        <a href="/about" class="transition-colors text-slate-300 hover:text-white py-1">About</a>
-        <a href="/faq" class="transition-colors text-slate-300 hover:text-white py-1">FAQ</a>
-        <a href="/blog" class="transition-colors text-[#38BDF8] font-semibold py-1">Blog</a>
-        <a href="/contact" class="transition-colors text-slate-300 hover:text-white py-1">Contact</a>
+        <a href="/services/" class="transition-colors text-slate-300 hover:text-white py-1">Services</a>
+        <a href="/about/" class="transition-colors text-slate-300 hover:text-white py-1">About</a>
+        <a href="/faq/" class="transition-colors text-slate-300 hover:text-white py-1">FAQ</a>
+        <a href="/blog/" class="transition-colors text-[#38BDF8] font-semibold py-1">Blog</a>
+        <a href="/contact/" class="transition-colors text-slate-300 hover:text-white py-1">Contact</a>
       </nav>
 
       <!-- Primary Action Button -->
@@ -400,11 +409,11 @@
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden glass-nav px-4 pt-3 pb-6 space-y-2 border-t border-white/5">
       <a href="/" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">Home</a>
-      <a href="/services" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">Services</a>
-      <a href="/about" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">About</a>
-      <a href="/faq" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">FAQ</a>
-      <a href="/blog" class="block w-full text-left py-2 px-3 rounded-lg text-[#38BDF8] font-semibold hover:bg-white/5">Blog</a>
-      <a href="/contact" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">Contact</a>
+      <a href="/services/" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">Services</a>
+      <a href="/about/" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">About</a>
+      <a href="/faq/" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">FAQ</a>
+      <a href="/blog/" class="block w-full text-left py-2 px-3 rounded-lg text-[#38BDF8] font-semibold hover:bg-white/5">Blog</a>
+      <a href="/contact/" class="block w-full text-left py-2 px-3 rounded-lg text-slate-300 hover:bg-white/5">Contact</a>
       <button onclick="openBookingModal(); toggleMobileMenu();" class="w-full mt-2 py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wider text-white bg-[#1E6BFB]">
         Book 1-on-1 Strategy Call &rarr;
       </button>
@@ -419,7 +428,7 @@
       <nav class="flex items-center gap-2 text-xs text-slate-400 font-mono mb-8" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <a href="/blog" class="hover:text-white transition-colors">Blog</a>
+        <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
         <span>/</span>
         <span id="breadcrumb-category" class="text-cyan-400">Playbook</span>
       </nav>
@@ -535,7 +544,7 @@
         <section class="pt-8 border-t border-white/10 space-y-4">
           <div class="flex items-center justify-between">
             <div class="text-xs font-mono uppercase text-[#38BDF8] font-bold tracking-widest">More Frameworks</div>
-            <a href="/blog" class="text-xs text-slate-400 hover:text-white transition-colors">View All &rarr;</a>
+            <a href="/blog/" class="text-xs text-slate-400 hover:text-white transition-colors">View All &rarr;</a>
           </div>
           <h2 class="text-xl font-bold text-white">Related Playbooks</h2>
           <div id="related-posts-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -553,7 +562,7 @@
           The requested article may have been unpublished or moved. Explore our latest published digital marketing frameworks below.
         </p>
         <div class="pt-4">
-          <a href="/blog" class="px-6 py-3 rounded-xl bg-[#1E6BFB] text-white text-xs font-bold uppercase tracking-wider">
+          <a href="/blog/" class="px-6 py-3 rounded-xl bg-[#1E6BFB] text-white text-xs font-bold uppercase tracking-wider">
             Explore All Playbooks &rarr;
           </a>
         </div>
@@ -577,20 +586,20 @@
       <div class="space-y-2">
         <div class="font-mono text-white uppercase font-bold text-[11px]">Navigation</div>
         <div><a href="/" class="hover:text-white">Home</a></div>
-        <div><a href="/services" class="hover:text-white">Services</a></div>
-        <div><a href="/about" class="hover:text-white">About</a></div>
-        <div><a href="/faq" class="hover:text-white">FAQ</a></div>
-        <div><a href="/blog" class="text-[#38BDF8] font-semibold hover:text-white">Blog</a></div>
-        <div><a href="/contact" class="hover:text-white">Contact</a></div>
+        <div><a href="/services/" class="hover:text-white">Services</a></div>
+        <div><a href="/about/" class="hover:text-white">About</a></div>
+        <div><a href="/faq/" class="hover:text-white">FAQ</a></div>
+        <div><a href="/blog/" class="text-[#38BDF8] font-semibold hover:text-white">Blog</a></div>
+        <div><a href="/contact/" class="hover:text-white">Contact</a></div>
       </div>
 
       <div class="space-y-2">
         <div class="font-mono text-white uppercase font-bold text-[11px]">Core Capabilities</div>
-        <div><a href="/services" class="hover:text-white">AI Search Visibility (GEO)</a></div>
-        <div><a href="/services" class="hover:text-white">Performance Marketing</a></div>
-        <div><a href="/services" class="hover:text-white">Meta Ads (FB &amp; IG)</a></div>
-        <div><a href="/services" class="hover:text-white">SEO Strategy</a></div>
-        <div><a href="/services" class="hover:text-white">High-Intent Lead Gen</a></div>
+        <div><a href="/services/" class="hover:text-white">AI Search Visibility (GEO)</a></div>
+        <div><a href="/services/" class="hover:text-white">Performance Marketing</a></div>
+        <div><a href="/services/" class="hover:text-white">Meta Ads (FB &amp; IG)</a></div>
+        <div><a href="/services/" class="hover:text-white">SEO Strategy</a></div>
+        <div><a href="/services/" class="hover:text-white">High-Intent Lead Gen</a></div>
       </div>
 
       <div class="space-y-3">
